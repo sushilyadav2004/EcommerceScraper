@@ -1,0 +1,10 @@
+fastapi
+uvicorn[standard]
+requests
+beautifulsoup4
+sqlalchemy
+pyodbc
+pydantic
+python-dotenv
+pydantic-settings
+jinja2

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>E-commerce Product Scraper</title>
+
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🛒 E-commerce Product Scraper</h1>
+
+        <!-- Scrape Section -->
+        <div class="card">
+
+            <h2>Scrape Product</h2>
+
+            <input
+                type="text"
+                id="productUrl"
+                placeholder="Enter product URL"
+            >
+
+            <button onclick="scrapeProduct()">
+                Scrape Product
+            </button>
+
+            <p id="message"></p>
+
+        </div>
+
+
+        <!-- Product Result -->
+        <div class="card">
+
+            <h2>Product Details</h2>
+
+            <div id="productResult">
+                No product scraped yet.
+            </div>
+
+        </div>
+
+
+        <!-- All Products -->
+        <div class="card">
+
+            <div class="header-row">
+
+                <h2>Saved Products</h2>
+
+                <button onclick="loadProducts()">
+                    Refresh
+                </button>
+
+            </div>
+
+            <div id="productsTable">
+                Loading products...
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="/static/js/app.js"></script>
+
+</body>
+
+</html>
